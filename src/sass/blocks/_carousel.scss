@@ -1,49 +1,18 @@
-.carousel {
-  padding: 81px 0 82px 0;
-  &__inner {
-    position: relative;
-    width: 750px;
+.swiper {
+  &-slide-img {
+    display: block;
     margin: 0 auto;
-  .slick-prev {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -66px;
-    border: none;
-    background-color: #fff;
-    img {
-      width: 31px;
-      height: 50px;
-    }
-  }
-  .slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -66px;
-    border: none;
-    background-color: #fff;
-    img {
-      width: 31px;
-      height: 50px;
-    }
-  }
+    width: 85%;
+    height: 100%;
+    object-fit: cover;
   }
 }
-
-
-@media (max-width: 1200px) {}
-
-@media (max-width: 992px) {}
-
-@media (max-width: 768px) {
-
-}
-
 
 @media (max-width: 576px) {
-  .carousel {
-    display: none;
+  .swiper {
+      &-slide-img {
+        width: 70%;
+      }
   }
 }
 
