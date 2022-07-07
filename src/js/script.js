@@ -129,4 +129,8 @@ $("a[href^='#']").click(function(){
 });
 
 
+//WOW animation
+new WOW().init();
+
+
 
