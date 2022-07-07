@@ -91,6 +91,8 @@ validateForms('#order form');
 
 $('input[name=phone]').mask("+7 (999) 999-99-99");
 
+//E-mail Data
+
 $('form').submit(function (e) {
   e.preventDefault();
 
@@ -109,5 +111,22 @@ $('form').submit(function (e) {
   });
   return false;
 });
+
+
+//Page up
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1600) {
+        $('.pageup').fadeIn();
+    } else {
+        $('.pageup').fadeOut();
+    }
+});
+
+$("a[href^='#']").click(function(){
+    const _href = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    return false;
+});
+
 
 
